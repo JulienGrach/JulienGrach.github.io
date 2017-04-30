@@ -1,0 +1,46 @@
+header{
+  /*Centre le h1 et son sous titre avec flex, fond blanc*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255,255,255);
+}
+
+#logo{
+  /*Logo est une image*/
+  background: url('../../../images/linux.jpg');
+  background-size: cover;
+  height: 6em;
+  width: 6em;
+}
+
+header h1{
+  /*Taille arbitraire du h1*/
+  font-size: 2.5em;
+}
+
+header h2{
+  /*Taille particulière du h2 de header et séparateur*/
+  border-top: 1px solid black;
+  font-size: 2em;
+}
+
+#ajout{
+  color: black;
+  position: absolute;
+  top: 90vh;
+  left: 45%;
+}
+#ajout:hover{
+  color: rgb(80, 80, 80);
+}
+
+header p{
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+header p:hover{
+  color: red;
+}

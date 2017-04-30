@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  /*Pas de marge par défaut*/
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  /*Police par défaut, fond gris*/
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4f4f4; }
+
+header {
+  height: 100vh;
+  min-height: 600px; }
+
+section {
+  margin-top: 10vh;
+  height: 100vh -10vh; }
+
+a {
+  /*Pas de décoration par défaut, blancs*/
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  color: #ddddde; }
+
+li {
+  /*Pas de décoration par défaut*/
+  list-style: none; }
+
+.ancre {
+  /*Titres h2 de section centrés et marge supérieure*/
+  width: 500px;
+  text-align: center;
+  margin: auto; }
+
+.logoSection {
+  margin: auto;
+  height: 3em;
+  width: 3em; }
+
+.conteneur {
+  /*Les conteneurs servent à flex, marge supérieure pour décoller du titre de section*/
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh; }
+
+article {
+  /*Les articles prennent 50% de fenêtre, centrés, blancs, angles brossés*/
+  min-height: 335px;
+  width: 60vw;
+  height: 50vh;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  /*marge autour pour décoller bordure et texte*/
+  padding: 1em; }
+
+article h3 {
+  /*Sépare les articles de plusieurs titres, taille police*/
+  padding-top: 20px;
+  font-size: 1em; }
+
+nav {
+  /*Systématiquement présent en haut sur toute la longueur
+  gris transparent, hauteur arbitraire*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+nav ul {
+  /*Centre arbitrairement la liste en décallant sa marge haute et mise en ligne*/
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+nav ul li {
+  /*On centre les éléments du menu entre eux*/
+  width: 20%;
+  height: 100%;
+  text-align: center; }
+
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+nav ul li p {
+  display: block;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white; }
+
+header {
+  /*Centre le h1 et son sous titre avec flex, fond blanc*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  -moz-animation-duration: 3s; }
+
+#logo {
+  /*Logo est une image*/
+  background: url("../../../images/linux.jpg");
+  background-size: cover;
+  height: 6em;
+  width: 6em; }
+
+header h1 {
+  /*Taille arbitraire du h1*/
+  font-size: 2.5em; }
+
+header h2 {
+  /*Taille particulière du h2 de header et séparateur*/
+  border-top: 1px solid black;
+  font-size: 2em; }
+
+#ajout {
+  color: black;
+  position: absolute;
+  top: 90vh;
+  left: 45%; }
+
+#ajout:hover {
+  color: #505050; }
+
+header p {
+  margin-top: 50px;
+  font-size: 12px; }
+
+header p:hover {
+  color: red; }
+
+#competences {
+  display: none; }
+
+#competLogo {
+  background: url("../../../images/escalade.png");
+  background-size: cover; }
+
+#compet {
+  /*Contenu de l'article aligné et centré avec flex et bordure verte*/
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid green; }
+
+#compet .content {
+  /*Taille arbitraire des 3 contenus d'article et ... à travailler*/
+  width: 18vw;
+  margin: 5px; }
+
+#compet .content li {
+  /*marge supérieure aux lignes des contenus pour lisibilité*/
+  margin-top: 10px; }
+
+#lang > * {
+  /*On veut décoller l'aside de droite de celui du centre mais à cause de flex, on préfère
+  tricher et décoller simplement le contenu de cet aside*/
+  margin-left: 2em; }
+
+#formations {
+  display: none; }
+
+#educLogo {
+  background: url("../../../images/etude.png");
+  background-size: cover; }
+
+#etudes {
+  font-family: 'Quicksand', sans-serif;
+  padding: 40px;
+  border: none;
+  background-color: #fff;
+  border-bottom: 2px solid red;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  /*margin-top: -60px;*/ }
+
+#etudes h3 {
+  /*Mise en avant de la police formation*/
+  font-size: 1.3em; }
+
+#etudes li {
+  /*On décole la ligne de la précédente*/
+  padding-top: 10px; }
+
+#experiences {
+  display: none; }
+
+#expLogo {
+  background: url("../../../images/microscope.png");
+  background-size: cover; }
+
+#exp {
+  /*bordure inférieure bleue*/
+  border-bottom: 2px solid blue; }
+
+#exp li {
+  padding-top: 5px; }
+
+#exp p {
+  padding-top: 5px; }
+
+#interets {
+  display: none; }
+
+#restLogo {
+  background: url("../../../images/learn.png");
+  background-size: cover; }
+
+.loisir {
+  /*Ces div particulières prennent des propriétés particulières:
+  longueur arbitraire, blanches, contenu décollé de bordure, angles brossés*/
+  width: 25vw;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.loisir h3 {
+  /*Caractères plus gros qu'un aside, plus petit qu'un article*/
+  font-size: 1em; }
+
+.loisir p {
+  /*Caractères plus gros qu'un aside, plus petit qu'un article*/
+  font-size: 0.9em; }
+
+#jv {
+  /*Positionnement de la div centrale qui permettra de faire graviter les autres autours*/
+  margin: auto;
+  margin-top: 15vh;
+  border-bottom: 2px solid blue; }
+
+#road-trip {
+  /*positionnement arbitraire avec float et marges*/
+  float: left;
+  margin-top: 4vh;
+  margin-left: 12vh;
+  border-bottom: 2px solid green; }
+
+#histoire {
+  /*positionnement arbitraire avec float et marges*/
+  float: right;
+  margin-top: 25vh;
+  margin-right: 8vh;
+  border-bottom: 2px solid red; }
+
+#culture {
+  /*positionnement arbitraire avec float et marges*/
+  float: left;
+  margin-top: 5vh;
+  margin-left: 25vh;
+  border-bottom: 2px solid yellow; }
+
+footer {
+  /*Le footer fait 1/20e de fenêtre, son contenu est aligné et centré avec flex*/
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  opacity: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #828082; }
+
+footer a {
+  /*A la différence des autres liens, ceux du footer sont en gras*/
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

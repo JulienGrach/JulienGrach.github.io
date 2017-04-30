@@ -1,0 +1,36 @@
+nav{
+  /*Systématiquement présent en haut sur toute la longueur
+  gris transparent, hauteur arbitraire*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul{
+  /*Centre arbitrairement la liste en décallant sa marge haute et mise en ligne*/
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  /*On centre les éléments du menu entre eux*/
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+nav ul li:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li p{
+  display: block;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+}

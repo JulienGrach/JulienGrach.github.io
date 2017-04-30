@@ -1,0 +1,21 @@
+#experiences{
+  display: none;
+}
+
+#expLogo{
+  background: url('../../../images/microscope.png');
+  background-size: cover;
+}
+
+#exp{
+  /*bordure inférieure bleue*/
+  border-bottom: 2px solid blue;
+}
+
+#exp li{
+  padding-top: 5px;
+}
+
+#exp p{
+  padding-top: 5px;
+}

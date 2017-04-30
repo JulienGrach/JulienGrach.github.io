@@ -1,0 +1,90 @@
+
+  var langue = "french";
+  var json;
+
+  $('.langue').click(function(){
+    console.log(langue);
+    if(langue == "french"){
+      langue = "english";
+      console.log(langue);
+    }else{
+      langue = "french";
+      console.log(langue);
+    }
+
+    $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+        navHTML.json = json.content.nav;
+    });
+
+  });
+
+  var navHTML = new Vue({
+    el : '#menu',
+    data : {
+      "json" : {}
+    }
+  });
+  $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+      navHTML.json = json.content.nav;
+  });
+
+
+
+  var headerHTML = new Vue({
+    el : '#acceuil',
+    data : {
+      "json" : {}
+    }
+  });
+  $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+      headerHTML.json = json.content.header;
+  });
+
+
+
+  var competHTML = new Vue({
+    el : '#competences',
+    data : {
+      "json" : {}
+    }
+  });
+  $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+      competHTML.json = json.content.competences;
+  });
+
+
+
+  var experHTML = new Vue({
+    el : '#experiences',
+    data : {
+      "json" : {}
+    }
+  });
+  $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+      experHTML.json = json.content.experiences;
+  });
+
+
+
+  var formaHTML = new Vue({
+    el : '#formations',
+    data : {
+      "json" : {}
+    }
+  });
+  $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+      formaHTML.json = json.content.formations;
+  });
+
+
+
+
+  var interHTML = new Vue({
+    el : '#interets',
+    data : {
+      "json" : {}
+    }
+  });
+  $.get('assets/dev/contents/'+langue+'.JSON', function (json) {
+      interHTML.json = json.content.interets;
+  });

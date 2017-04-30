@@ -1,0 +1,60 @@
+#interets{
+  display: none;
+}
+
+#restLogo{
+  background: url('../../../images/learn.png');
+  background-size: cover;
+}
+
+.loisir{
+  /*Ces div particulières prennent des propriétés particulières:
+  longueur arbitraire, blanches, contenu décollé de bordure, angles brossés*/
+  width: 25vw;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.loisir h3{
+  /*Caractères plus gros qu'un aside, plus petit qu'un article*/
+  font-size: 1em;
+}
+
+.loisir p{
+  /*Caractères plus gros qu'un aside, plus petit qu'un article*/
+  font-size: 0.9em;
+}
+
+#jv{
+  /*Positionnement de la div centrale qui permettra de faire graviter les autres autours*/
+  margin: auto;
+  margin-top: 15vh;
+  border-bottom: 2px solid blue;
+}
+
+#road-trip{
+  /*positionnement arbitraire avec float et marges*/
+  float: left;
+  margin-top: 4vh;
+  margin-left: 12vh;
+  border-bottom: 2px solid green;
+}
+
+#histoire{
+  /*positionnement arbitraire avec float et marges*/
+  float: right;
+  margin-top: 25vh;
+  margin-right: 8vh;
+  border-bottom: 2px solid red;
+}
+
+#culture{
+  /*positionnement arbitraire avec float et marges*/
+  float: left;
+  margin-top: 5vh;
+  margin-left: 25vh;
+  border-bottom: 2px solid yellow;
+}

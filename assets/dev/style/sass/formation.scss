@@ -1,0 +1,32 @@
+#formations{
+  display: none;
+}
+
+
+#educLogo{
+  background: url('../../../images/etude.png');
+  background-size: cover;
+}
+
+#etudes{
+
+  font-family: 'Quicksand', sans-serif;
+  padding: 40px;
+  border: none;
+  background-color: #fff;
+  border-bottom: 2px solid red;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  /*margin-top: -60px;*/
+}
+
+#etudes h3{
+  /*Mise en avant de la police formation*/
+  font-size: 1.3em;
+}
+
+#etudes li{
+  /*On décole la ligne de la précédente*/
+  padding-top: 10px;
+}

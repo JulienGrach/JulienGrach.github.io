@@ -1,0 +1,85 @@
+*{
+  /*Pas de marge par défaut*/
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  /*Police par défaut, fond gris*/
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header{
+  height: 100vh; //-1px à cause de la border
+  min-height: 600px;
+}
+
+section{
+  margin-top: 10vh;
+  height: 100vh -10vh;// -10vh à cause de la margin
+}
+
+a{
+  /*Pas de décoration par défaut, blancs*/
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: rgb(221, 221, 222);
+}
+
+li{
+  /*Pas de décoration par défaut*/
+  list-style: none;
+}
+
+.ancre{
+  /*Titres h2 de section centrés et marge supérieure*/
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+.logoSection{
+  margin: auto;
+  height: 3em;
+  width: 3em;
+}
+
+.conteneur{
+  /*Les conteneurs servent à flex, marge supérieure pour décoller du titre de section*/
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+article{
+  /*Les articles prennent 50% de fenêtre, centrés, blancs, angles brossés*/
+  min-height: 335px;
+  width: 60vw;
+  height: 50vh;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  /*marge autour pour décoller bordure et texte*/
+  padding: 1em;
+}
+
+article h3{
+/*Sépare les articles de plusieurs titres, taille police*/
+padding-top: 20px;
+font-size: 1em;
+}
+
+@import 'nav.scss';
+@import 'header.scss';
+@import 'competences.scss';
+@import 'formation.scss';
+@import 'experiences.scss';
+@import 'interets.scss';
+@import 'footer.scss';

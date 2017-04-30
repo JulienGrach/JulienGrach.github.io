@@ -1,0 +1,17 @@
+footer{
+  /*Le footer fait 1/20e de fenêtre, son contenu est aligné et centré avec flex*/
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  opacity: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(130, 128, 130);
+}
+
+footer a{
+  /*A la différence des autres liens, ceux du footer sont en gras*/
+  font-weight: bold;
+}

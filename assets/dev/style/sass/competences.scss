@@ -1,0 +1,33 @@
+#competences{
+  display: none;
+}
+
+#competLogo{
+  background: url('../../../images/escalade.png');
+  background-size: cover;
+}
+
+#compet{
+  /*Contenu de l'article aligné et centré avec flex et bordure verte*/
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid green;
+}
+
+#compet .content{
+  /*Taille arbitraire des 3 contenus d'article et ... à travailler*/
+  width: 18vw;
+  margin: 5px;
+}
+
+#compet .content li{
+  /*marge supérieure aux lignes des contenus pour lisibilité*/
+  margin-top: 10px;
+}
+
+
+#lang > *{
+  /*On veut décoller l'aside de droite de celui du centre mais à cause de flex, on préfère
+  tricher et décoller simplement le contenu de cet aside*/
+  margin-left: 2em;
+}
