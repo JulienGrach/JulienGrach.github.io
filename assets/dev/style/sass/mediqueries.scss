@@ -1,39 +1,36 @@
-@media screen and (max-width: 1024px)
-{
+@media screen and (max-width: 1024px) {
   /*GENERAL*/
 
-  header{
-    min-height: 0;
+  header {
     height: 50vh;
-    min-height: 216.5px;
+    min-height: 200px;
   }
 
-  section{
+  section {
     display: block;
     height: auto;
   }
 
-  .ancre{
+  .ancre {
     /*Titres h2 de section centrés et marge supérieure*/
     font-size: 30px;
     width: 200px;
     margin: auto;
   }
 
-
   /*STRUCTURE DES SECTIONS AVEC FLEX*/
-  .logoSection{
+  .logoSection {
     height: 1.5em;
     width: 1.5em;
   }
 
-  .conteneur{
+  .conteneur {
     /*Les conteneurs servent à flex, marge supérieure pour décoller du titre de section*/
     padding-top: 2vh;
     display: block;
   }
 
-  article{
+  article {
     min-height: 0;
     width: 100vw;
     height: auto;
@@ -43,66 +40,65 @@
     border-radius: 0;
   }
 
-  article h3{
-  font-size: 20px;
+  article h3 {
+    font-size: 20px;
   }
 
-  aside{
+  aside {
     display: none;
   }
 
-
   /*MENU NAVIGATION*/
-  nav{
+  nav {
     position: static;
-    min-height: 216.5px;
+    min-height: 200px;
     height: 50vh;
   }
 
-  nav ul{
+  nav ul {
     /*Centre arbitrairement la liste en décallant sa marge haute et mise en ligne*/
     margin-top: 0;
     flex-direction: column;
-}
+  }
 
-  nav ul li{
+  nav ul li {
     height: 40px;
+    width: 50%;
+    margin: auto;
     border-bottom: 1px solid black;
     font-size: 20px;
     font-weight: bold;
   }
 
-  #menuquerie{
+  #menuquerie {
     display: none;
   }
 
-
   /*SECTION TITRE*/
 
-  #logo{
+  #logo {
     /*Logo est une image*/
     height: 6em;
     width: 6em;
   }
 
-  header h1{
+  header h1 {
     /*Taille arbitraire du h1*/
     font-size: 40px;
   }
 
-  header h2{
+  header h2 {
     /*Taille particulière du h2 de header et séparateur*/
     font-size: 20px;
   }
 
-
   /*SECTION COMPETENCES*/
 
-  #competences{
+  #competences {
     min-height: 512px;
   }
 
-  #formations{
+  #formations {
     /*Contenu de l'article aligné et centré avec flex et bordure verte*/
     flex-direction: column;
     border: none;
@@ -110,7 +106,7 @@
     border-top: 1px solid green;
   }
 
-  #formations .content{
+  #formations .content {
     /*Taille arbitraire des 3 contenus d'article et ... à travailler*/
     width: 100%;
     margin: auto;
@@ -119,13 +115,13 @@
     align-items: center;
   }
 
-  #formations .content ul{
+  #formations .content ul {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+  }
 
-  #educLogo{
+  #educLogo {
     height: 3em;
     width: 3em;
     margin: auto;
@@ -133,7 +129,7 @@
     background-size: cover;
   }
 
-  #etudes{
+  #etudes {
     /*On change certaine propriété d'aside pour cette partie un peu particulière liée à
     la formation: police, padding moins important, couleur bleu, angles plus brossés, pas de bordure
     et un positionnement supérieure à son positionnement flex grâce à la marge supérieure négative*/
@@ -148,25 +144,24 @@
     padding-bottom: 10%;
   }
 
-  #etudes h3{
+  #etudes h3 {
     /*Mise en avant de la police formation*/
     font-size: 1.3em;
   }
 
-  #etudes li{
+  #etudes li {
     /*On décole la ligne de la précédente*/
     margin-top: 10px;
   }
 
-  #lang > *{
+  #lang > * {
     /*On veut décoller l'aside de droite de celui du centre mais à cause de flex, on préfère
     tricher et décoller simplement le contenu de cet aside*/
     margin-left: 0;
   }
 
-
   /*SECTION EXPERIENCE*/
-  #exp{
+  #exp {
     /*bordure inférieure bleue*/
     border-bottom: 1px solid blue;
     border-top: 1px solid blue;
@@ -175,25 +170,24 @@
     align-items: center;
   }
 
-  #exp li{
+  #exp li {
     width: 90%;
     margin: auto;
     padding-top: 10px;
   }
 
-  #exp p{
+  #exp p {
     width: 90%;
     padding-top: 5px;
   }
 
-  #reste .ancre{
+  #reste .ancre {
     width: 280px;
   }
 
   /*SECTION RESTE*/
 
-
-  .loisir{
+  .loisir {
     /*Ces div particulières prennent des propriétés particulières:
     longueur arbitraire, blanches, contenu décollé de bordure, angles brossés*/
     width: 100%;
@@ -203,17 +197,17 @@
     border-radius: 0;
   }
 
-  .loisir h3{
+  .loisir h3 {
     /*Caractères plus gros qu'un aside, plus petit qu'un article*/
     font-size: 1em;
   }
 
-  .loisir p{
+  .loisir p {
     /*Caractères plus gros qu'un aside, plus petit qu'un article*/
     font-size: 0.9em;
   }
 
-  #jv{
+  #jv {
     /*Positionnement de la div centrale qui permettra de faire graviter les autres autours*/
     float: none;
     margin-top: 0;
@@ -221,7 +215,7 @@
     border-bottom: none;
   }
 
-  #road-trip{
+  #road-trip {
     /*positionnement arbitraire avec float et marges*/
     float: none;
     margin-top: 0;
@@ -231,7 +225,7 @@
     margin-top: 2vh;
   }
 
-  #histoire{
+  #histoire {
     /*positionnement arbitraire avec float et marges*/
     float: none;
     margin-top: 0;
@@ -239,7 +233,7 @@
     border-bottom: none;
   }
 
-  #culture{
+  #culture {
     /*positionnement arbitraire avec float et marges*/
     float: none;
     margin-top: 0;
@@ -247,9 +241,8 @@
     border-bottom: 1px solid red;
   }
 
-
   /*SECTION FOOTER*/
-  footer{
+  footer {
     /*Le footer fait 1/20e de fenêtre, son contenu est aligné et centré avec flex*/
     height: auto;
     display: flex;
@@ -259,7 +252,7 @@
     background-color: rgb(130, 128, 130);
   }
 
-  footer span{
+  footer span {
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
@@ -267,7 +260,8 @@
     align-items: center;
   }
 
-  footer a{
+  footer a {
     /*A la différence des autres liens, ceux du footer sont en gras*/
     font-weight: bold;
+  }
 }

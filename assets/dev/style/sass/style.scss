@@ -76,6 +76,12 @@ padding-top: 20px;
 font-size: 1em;
 }
 
+.chevron{
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+}
+
 @import 'nav.scss';
 @import 'header.scss';
 @import 'competences.scss';
@@ -83,3 +89,4 @@ font-size: 1em;
 @import 'experiences.scss';
 @import 'interets.scss';
 @import 'footer.scss';
+@import 'mediqueries.scss';
