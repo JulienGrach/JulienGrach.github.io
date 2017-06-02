@@ -1,0 +1,16 @@
+nav{
+  top: auto;
+  bottom: 0px;
+}
+
+nav .ul-mq{
+  display: flex;
+}
+
+nav .ulMenu{
+  display: none;
+}
+
+nav .ul-mq li{
+  width: 100%;
+}

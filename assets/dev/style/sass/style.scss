@@ -37,7 +37,7 @@ li{
 
 .ancre{
   /*Titres h2 de section centrés et marge supérieure*/
-  width: 500px;
+  width: 100vw;
   text-align: center;
   margin: auto;
 }
@@ -82,6 +82,8 @@ font-size: 1em;
   bottom: 10px;
 }
 
+
+
 @import 'nav.scss';
 @import 'header.scss';
 @import 'competences.scss';
@@ -89,4 +91,18 @@ font-size: 1em;
 @import 'experiences.scss';
 @import 'interets.scss';
 @import 'footer.scss';
-@import 'mediqueries.scss';
+
+
+@media screen and (max-width: 760px) {
+  @import 'style-mq.scss';
+  @import 'header-mq.scss';
+  @import 'nav-mq.scss';
+
+  @import 'competences-mq.scss';
+  @import 'formation-mq.scss';
+  @import 'experiences-mq.scss';
+  @import 'interets-mq.scss';
+
+  @import 'footer-mq.scss';
+}
+

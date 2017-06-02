@@ -1,0 +1,39 @@
+#compet{
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: none;
+}
+
+#compet .content{
+  width: 100%;
+}
+
+#compet .content h3{
+  text-align: center;
+}
+
+#compet .content ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#compet .content li{
+  width: 100px;
+}
+
+#compet .content li:nth-child(5){
+  display: none;
+}
+
+#compet #facul{
+  display: none;
+}
+
+#lang > *{
+  margin-left: auto;
+}
+
+#compet #lang li:nth-child(2){
+  display: none;
+}

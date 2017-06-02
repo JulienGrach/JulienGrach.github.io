@@ -57,5 +57,19 @@ $(function(){
         });
     }
 
+    $('#preLink').on('click', function(){
+        if(page[activ-1]){
+            changePage((activ-1), activ);
+            activ--;
+        }
+    });
+
+    $('#nextLink').on('click', function(){
+        if(page[activ+1]) {
+            changePage((activ + 1), activ);
+            activ++;
+        }
+    });
+
 
 });

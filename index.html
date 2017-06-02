@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Julien Grach - Web Developer</title>
     <link rel="stylesheet" href="assets/dev/style/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="mediaqueries.css" />
     <link href="https://fonts.googleapis.com/css?family=Kalam|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/dev/node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="assets/dev/FontAwesome/css/font-awesome.min.css">
@@ -15,12 +16,16 @@
 
 
 <nav id='menu'>
-    <ul>
+    <ul class='ulMenu'>
         <li id="acceuilLink"><p>Accueil</p></li>
         <li id="competencesLink"><p>Competences</p></li>
         <li id="formationsLink"><p>Formations</p></li>
         <li id="experiencesLink"><p>Experiences</p></li>
         <li id="interetsLink"><p>Intérêts</p></li>
+    </ul>
+    <ul class='ul-mq'>
+        <li id="preLink"><p>Précédent</p></li>
+        <li id="nextLink"><p>Suivant</p></li>
     </ul>
 </nav>
 
@@ -73,7 +78,7 @@
                     <li>Javascript: Niveau Scolaire</li>
                     <li>(+JQuery, AngularJS)</li>
                 </ul>
-                <ul>
+                <ul id="facul">
                     <li>C: Notions</li>
                 </ul>
             </div>
