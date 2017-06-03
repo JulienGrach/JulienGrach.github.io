@@ -293,9 +293,7 @@ footer a {
 
   body {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; }
+    flex-direction: column; }
 
   header h2 {
     /*Taille particulière du h2 de header et séparateur*/
