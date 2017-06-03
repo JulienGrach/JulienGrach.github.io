@@ -291,14 +291,22 @@ footer a {
     height: auto;
     border-radius: auto; }
 
+  body {
+    display: flex;
+    flex-direction: column; }
+
   header h2 {
     /*Taille particulière du h2 de header et séparateur*/
     border-top: 1px solid black;
     font-size: 1.8em; }
 
+  header {
+    height: 90vh; }
+
   nav {
-    top: auto;
-    bottom: 0px; }
+    position: static;
+    order: 10;
+    height: 10vh; }
 
   nav .ul-mq {
     display: flex; }
@@ -313,7 +321,8 @@ footer a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-bottom: none; }
+    border-bottom: none;
+    padding: 5px 0 5px 0; }
 
   #compet .content {
     width: 100%; }
