@@ -1,7 +1,7 @@
 nav{
-  position: fixed;
-  top: auto;
-  bottom: 0px;
+  position: static;
+  order: 10;
+  height: 10vh;
 }
 
 nav .ul-mq{
