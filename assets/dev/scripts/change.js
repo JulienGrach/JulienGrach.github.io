@@ -5,6 +5,7 @@ $(function(){
 
 
 
+
     function createArray(){
         //Crée le tableau des pages avec DOM et déclencheurs attachés.
         var array = [];
@@ -40,8 +41,6 @@ $(function(){
         page[oldId].dom.hide();
         page[newId].dom.show();
     }
-
-
 
 
 
