@@ -5,12 +5,16 @@
 article{
   width: 100%;
   height: auto;
-  border-radius: auto;
+  border-radius: 0;
 }
 
 body{
   display: flex;
   flex-direction: column;
+}
+
+section{
+  margin-bottom: 10vh;
 }
 
 

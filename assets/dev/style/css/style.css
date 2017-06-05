@@ -289,11 +289,14 @@ footer a {
   article {
     width: 100%;
     height: auto;
-    border-radius: auto; }
+    border-radius: 0; }
 
   body {
     display: flex;
     flex-direction: column; }
+
+  section {
+    margin-bottom: 10vh; }
 
   header h2 {
     /*Taille particulière du h2 de header et séparateur*/
@@ -304,8 +307,8 @@ footer a {
     height: 90vh; }
 
   nav {
-    position: static;
-    order: 10;
+    top: auto;
+    bottom: 0;
     height: 10vh; }
 
   nav .ul-mq {
@@ -322,6 +325,7 @@ footer a {
     align-items: center;
     justify-content: flex-start;
     border-bottom: none;
+    border-top: 2px solid green;
     padding: 5px 0 5px 0; }
 
   #compet .content {
@@ -350,13 +354,16 @@ footer a {
     display: none; }
 
   #etudes {
-    border-bottom: none; }
+    border-bottom: none;
+    border-top: 2px solid red;
+    border-radius: 0; }
 
   #etudes h3 {
     display: none; }
 
   #exp {
     border-bottom: none;
+    border-top: 2px solid blue;
     margin-bottom: 40px; }
 
   .loisir {
@@ -373,7 +380,8 @@ footer a {
   #road-trip {
     float: none;
     margin-left: 0;
-    border-bottom: none; }
+    border-bottom: none;
+    border-top: 2px solid yellow; }
 
   #jv {
     margin: auto;
